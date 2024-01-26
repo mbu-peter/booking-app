@@ -9,6 +9,8 @@ import Register from "./pages/Register";
 import Signin from "./pages/Signin";
 import AddHotel from "./pages/Add-hotel";
 import { useAppContext } from "./contexts/AppContext";
+import MyHotels from "./pages/MyHotels";
+import ExplorePage from "./pages/Explore";
 
 function App() {
   const { isLoggedIn } = useAppContext();
@@ -50,10 +52,26 @@ function App() {
         {isLoggedIn && (
           <>
             <Route
-              path="/addHotel"
+              path="/add-hotel"
               element={
                 <Layout>
                   <AddHotel />
+                </Layout>
+              }
+            />
+            <Route
+              path="/my-hotels"
+              element={
+                <Layout>
+                  <MyHotels />
+                </Layout>
+              }
+            />
+            <Route
+              path="/explore"
+              element={
+                <Layout>
+                  <ExplorePage />
                 </Layout>
               }
             />
