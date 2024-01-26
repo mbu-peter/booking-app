@@ -7,13 +7,13 @@ const Footer = () => {
         </span>
         <div className="flex space-x-4">
           <a
-            href="#privacy-policy"
+            href="/policy"
             className="text-white font-bold hover:text-purple-300 transition duration-300"
           >
             Privacy Policy
           </a>
           <a
-            href="#terms-and-conditions"
+            href="/terms"
             className="text-white font-bold hover:text-purple-300 transition duration-300"
           >
             Terms and Conditions

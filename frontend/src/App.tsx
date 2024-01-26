@@ -11,6 +11,10 @@ import AddHotel from "./pages/Add-hotel";
 import { useAppContext } from "./contexts/AppContext";
 import MyHotels from "./pages/MyHotels";
 import ExplorePage from "./pages/Explore";
+import EditHotel from "./pages/Edit-Hotel";
+import About from "./pages/About";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsAndConditions from "./pages/Terms";
 
 function App() {
   const { isLoggedIn } = useAppContext();
@@ -21,7 +25,23 @@ function App() {
           path="/"
           element={
             <Layout>
-              <p>Home Page</p>
+              <p>Coming Soon...1</p>
+            </Layout>
+          }
+        />
+        <Route
+          path="/terms"
+          element={
+            <Layout>
+              <TermsAndConditions />
+            </Layout>
+          }
+        />
+        <Route
+          path="/policy"
+          element={
+            <Layout>
+              <PrivacyPolicy />
             </Layout>
           }
         />
@@ -49,6 +69,15 @@ function App() {
             </Layout>
           }
         />
+        <Route
+          path="/about"
+          element={
+            <Layout>
+              <About />
+            </Layout>
+          }
+        />
+
         {isLoggedIn && (
           <>
             <Route
@@ -72,6 +101,14 @@ function App() {
               element={
                 <Layout>
                   <ExplorePage />
+                </Layout>
+              }
+            />
+            <Route
+              path="/edit-hotel/:hotelId"
+              element={
+                <Layout>
+                  <EditHotel />
                 </Layout>
               }
             />

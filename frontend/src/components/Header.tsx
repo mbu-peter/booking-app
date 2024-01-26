@@ -12,6 +12,12 @@ const Header = () => {
           <Link to="/">MPSafaris.com</Link>
         </span>
         <span className="flex space-x-4">
+          <Link
+            className="text-white hover:text-red-300 transition duration-300"
+            to="/about"
+          >
+            About
+          </Link>
           {isLoggedIn ? (
             <>
               <Link
@@ -32,12 +38,7 @@ const Header = () => {
               >
                 Explore
               </Link>
-              <Link
-                className="text-white hover:text-red-300 transition duration-300"
-                to="/new-link-2"
-              >
-                About
-              </Link>
+
               <SignOutButton />
             </>
           ) : (
