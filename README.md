@@ -11,6 +11,6 @@ This is a full-stack hotel booking application where users can upload their hote
 
 ## Demo
 
-You can view a live demo of the API at: [[https://fast-api-social-app.onrender.com](https://vacation-app.onrender.com)]([https://fast-api-social-app.onrender.com](https://vacation-app.onrender.com))
+You can view a live demo of the application at: [https://vacation-app.onrender.com](https://vacation-app.onrender.com)
 # Authentication
 Fully fledged authentication
